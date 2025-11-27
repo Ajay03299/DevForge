@@ -1,0 +1,9 @@
+def calculate_average(numbers)
+    # Bug 1: Syntax error (missing colon above)
+    total = sum(numbers)
+    count = 0
+    # Bug 2: Division by zero below (count is 0)
+    return total / count
+
+data = [10, 20, 30]
+print("Average is:", calculate_average(data))

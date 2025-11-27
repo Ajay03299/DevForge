@@ -1,0 +1,10 @@
+counter = 0
+
+def increment_counter():
+    # BUG: Python thinks 'counter' is local because we assign to it,
+    # but we try to read it before assignment.
+    print(f"Current counter: {counter}")
+    counter += 1
+
+increment_counter()
+increment_counter()
